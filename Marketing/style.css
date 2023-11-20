@@ -22,6 +22,10 @@
     margin-right: 30px;
 }
 
+.link__menu {
+    margin-right: 30px;
+}
+
 .header__link {
     display: flex;
     float: right;
@@ -42,7 +46,6 @@
 
 .top__brend {
     vertical-align: top;
-    margin-right: 30px;
     margin-top: 289px;
     margin-right: 331px;
     width: 405px;
@@ -171,34 +174,29 @@
         height: 74px;
     }
     .header__logo {
-        width: 111px;
-        height: 38px;
-        margin-top: 18px;
         margin-left: 32px;
     }
     .link {
         margin-right: 15px;
     }
+    .link__menu {
+        margin-right: 15px;
+    }
     .header__link {
-        display: flex;
-        float: right;
         margin-right: 32px;
         margin-top: 19px;
     }
     .top__header {
-        background: #F1E4E6;
         width: 769.57px;
         height: 367.57px;
     }
     .top__logo {
         width: 386px;
-        height: 386px;
+        height: 368px;
     }
     .top__brend {
-        vertical-align: top;
         margin-right: 33.57px;
         margin-top: 138px;
-        margin-right: 39px;
         width: 311px;
         height: 92px;
     }
@@ -218,88 +216,128 @@
         width: 734.58px;
         height: 116.09px;
     }
-    .middle__sale {
-        display: flex;
-        margin-bottom: 30px;
-        justify-content: space-between;
-    }
     .products {
         width: 768px;
         margin-left: 16px;
         margin-right: 16px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
     }
     .title {
-        font-size: 30px;
-        color: #222222;
         margin-bottom: 3.3px;
     }
     .subtitle {
-        font-size: 14px;
-        color: #9F9F9F;
         margin-bottom: 72.74px;
     }
     .product__offers {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-between;
         margin-bottom: 32.48px;
     }
-    .product img {
-        width: 360px;
-        height: 420px;
-    }
     .product {
-        width: 360px;
         height: 581px;
     }
     .product__title {
-        font-family: Lato;
-        font-size: 13px;
-        color: #000000;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0em;
-        text-align: left;
         margin-left: 16.46px;
         margin-top: 25.35px;
         margin-bottom: 12.656px;
     }
     .product__subtitle {
-        font-family: Lato;
-        color: #5D5D5D;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 17px;
-        letter-spacing: 0em;
-        text-align: left;
-        width: 302px;
         margin-left: 16.46px;
         margin-bottom: 18px;
     }
     .product__price {
-        font-family: Lato;
-        color: #F16D7F;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
         margin-left: 16.46px;
         margin-bottom: 20px;
     }
-    .product__button {
-        display: flex;
-        width: 212px;
-        height: 48px;
-        font-size: 16px;
-        color: #FF6A6A;
-        border: 1px solid #FF6A6A;
-        background: #F8F8F8;
-        justify-content: center;
-        align-items: center;
+}
+
+@media (max-width: 320px) {
+    /*Для телефона*/
+    .header {
+        width: 375px;
+        height: 74px;
+    }
+    .header__logo {
+        margin-left: 16px;
+    }
+    .link {
+        margin-right: 0px;
+        display: none;
+    }
+    .link__menu img {
+        width: 32px;
+        height: 23px;
+    }
+    .header__link {
+        margin-right: 26px;
+        margin-top: 25px;
+    }
+    .top__header {
+        width: 375px;
+        height: 363px;
+    }
+    .top__logo {
+        display: none;
+    }
+    .top__brend {
+        margin-top: 148px;
+        margin-right: 56px;
+        margin-left: 56px;
+        width: 263px;
+        height: 66px;
+    }
+    .top__middle {
+        width: 343px;
+        height: 950px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    .img__sale {
+        width: 343px;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+    .img__accesories {
+        width: 343.26px;
+        height: 111px;
+    }
+    .middle__sale {
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .products {
+        width: 359px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .title {
+        margin-bottom: 3.3px;
+    }
+    .subtitle {
+        margin-bottom: 64.7px;
+    }
+    .product__offers {
+        margin-bottom: 40.61px;
+    }
+    .product img {
+        width: 359px;
+        height: 418.83px;
+    }
+    .product {
+        width: 359px;
+        height: 579.39px;
+        margin-bottom: 15.62px;
+    }
+    .product__title {
+        margin-left: 17.95px;
+        margin-top: 25.28px;
+        margin-bottom: 12.62px;
+    }
+    .product__subtitle {
+        margin-left: 16.41px;
+        margin-bottom: 17.95px;
+    }
+    .product__price {
+        margin-left: 18.36px;
+        margin-bottom: 19.95px;
     }
 }
