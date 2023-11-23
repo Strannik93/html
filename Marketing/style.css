@@ -24,6 +24,78 @@
 
 .link__menu {
     margin-right: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropmenu {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.dropmenu__content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 232px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropmenu__content a {
+    width: 232px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropmenu__title {
+    margin-top: 32px;
+    margin-bottom: 15px;
+    padding-left: 33px;
+    color: #000000;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.dropmenu__chapter {
+    color: #F16D7F;
+    margin-bottom: 12px;
+    margin-top: 9px;
+    padding-left: 33px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.dropmenu__subsection {
+    margin-bottom: 11px;
+    padding-left: 53.5px;
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.dropmenu__content a:hover {
+    background-color: #FFFFFF;
+}
+
+.link__menu:hover .dropmenu__content {
+    display: block;
+}
+
+.link__menu:hover .dropmenu {
+    background-color: black;
 }
 
 .header__link {
@@ -85,6 +157,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 95px;
 }
 
 .title {
@@ -107,9 +180,58 @@
     margin-bottom: 48px;
 }
 
-.product img {
+.product__img {
     width: 360px;
     height: 420px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.product__img:hover .overlay {
+    display: block;
+    background: #3A3838DB;
+}
+
+.img__button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__button a {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    display: flex;
+    width: 139px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    z-index: 1;
+}
+
+.product__img:hover .img__button {
+    opacity: 1;
 }
 
 .product {
@@ -167,6 +289,211 @@
     align-items: center;
 }
 
+.bottom {
+    width: 1600px;
+    height: 868px;
+}
+
+.bottom__info {
+    width: 1600px;
+    height: 341px;
+    background: #222224;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.info {
+    width: 360px;
+    height: 134px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info img {
+    height: 25%;
+}
+
+.info__title {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FBFBFB;
+    margin-bottom: 16.01px;
+    margin-top: 25.06px;
+}
+
+.info__subtitle {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FBFBFB;
+    width: 300px;
+    height: 134px;
+}
+
+.subscribe {
+    width: 1600px;
+    height: 448px;
+    display: flex;
+    position: relative;
+}
+
+.subscribe__photo {
+    width: 1600px;
+    height: 448px;
+    background-image: url(img/Layer41.jpg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+}
+
+.subscribe__info {
+    width: 800px;
+    height: 448px;
+    position: relative;
+}
+
+.subscribe__info img {
+    width: 96px;
+    height: 96px;
+    margin-top: 97px;
+    margin-bottom: 30px;
+    margin-left: 352px;
+}
+
+.subscribe__infotext {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-style: italic;
+    color: #222224;
+    margin-left: 230.29px;
+    margin-right: 210.26px;
+}
+
+.subscribe__mail {
+    width: 800px;
+    height: 448px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe__mailtitle {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222224;
+    margin-top: 150px;
+}
+
+.subscribe__mailtext {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe__button {
+    position: relative;
+    width: 356px;
+    height: 49px;
+    margin-top: 32px;
+}
+
+.mail__input {
+    float: left;
+    box-sizing: border-box;
+    padding-right: 80px;
+    width: 100%;
+    height: 100%;
+    color: #222224;
+    background: #dbdbdb;
+    font-size: 16px;
+    padding-left: 16px;
+    border-radius: 16px;
+}
+
+.mail__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    color: #FBFBFB;
+    background: #F16D7F;
+    font-size: 16px;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.copyright {
+    width: 1600px;
+    height: 79px;
+    background: #222224;
+    display: flex;
+}
+
+.copyright__text {
+    width: 800px;
+    height: 79px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.copyright__title {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FBFBFB;
+    margin-left: 235px;
+}
+
+.copyright__links {
+    width: 800px;
+    height: 79px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.social__icon {
+    width: 147.66px;
+    height: 32px;
+    margin-right: 230.34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon img {
+    width: 31.45px;
+    height: 32px;
+}
+
 @media (max-width: 768px) {
     /*Для планшета*/
     .header {
@@ -218,6 +545,7 @@
     }
     .products {
         width: 768px;
+        height: 1950px;
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -245,6 +573,64 @@
     .product__price {
         margin-left: 16.46px;
         margin-bottom: 20px;
+    }
+    .bottom {
+        width: 768px;
+        height: 1382px;
+    }
+    .bottom__info {
+        width: 768px;
+        height: 610px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .subscribe {
+        width: 768px;
+        height: 693px;
+        flex-direction: column;
+    }
+    .subscribe__photo {
+        width: 768px;
+        height: 772px;
+        background-image: url(img/Layer41pl.jpg);
+    }
+    .subscribe__info {
+        width: 768px;
+        height: 346.5px;
+    }
+    .subscribe__info img {
+        margin-top: 64px;
+        margin-left: 325.71px;
+    }
+    .subscribe__infotext {
+        margin-left: 204px;
+        margin-right: 204.55px;
+    }
+    .subscribe__mail {
+        width: 768px;
+        height: 346.5px;
+    }
+    .subscribe__mailtitle {
+        margin-top: 0px;
+    }
+    .subscribe__button {
+        margin-top: 27px;
+    }
+    .copyright {
+        width: 768px;
+        position: relative;
+    }
+    .copyright__text {
+        width: 484px;
+    }
+    .copyright__title {
+        margin-left: 32px;
+    }
+    .copyright__links {
+        width: 484px;
+    }
+    .social__icon {
+        margin-right: 32.34px;
     }
 }
 
@@ -306,6 +692,7 @@
     }
     .products {
         width: 359px;
+        height: 100%;
         margin-left: 8px;
         margin-right: 8px;
     }
@@ -339,5 +726,91 @@
     .product__price {
         margin-left: 18.36px;
         margin-bottom: 19.95px;
+    }
+    .bottom {
+        width: 375px;
+        height: 1303px;
+    }
+    .bottom__info {
+        width: 375px;
+        height: 610px;
+    }
+    .info {
+        width: 347.82px;
+        height: 129.47px;
+        margin-right: 0px;
+    }
+    .info__title {
+        margin-bottom: 14.66px;
+        margin-top: 24.22px;
+    }
+    .subscribe {
+        width: 375px;
+        height: 550px;
+    }
+    .subscribe__photo {
+        width: 609.52px;
+        height: 550px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    .subscribe__info {
+        width: 375px;
+        height: 275px;
+    }
+    .subscribe__info img {
+        width: 91.73px;
+        height: 91.73px;
+        margin-top: 64px;
+        margin-bottom: 29.27px;
+        margin-left: 132.3px;
+    }
+    .subscribe__infotext {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .subscribe__mail {
+        width: 375px;
+        height: 275px;
+    }
+    .subscribe__mailtitle {
+        margin-top: 42px;
+    }
+    .subscribe__button {
+        width: 341px;
+        height: 46.94px;
+        margin-top: 22.15px;
+    }
+    .mail__input {
+        font-size: 14px;
+    }
+    .mail__button {
+        font-size: 14px;
+    }
+    .copyright {
+        width: 375px;
+        height: 143px;
+        flex-direction: column-reverse;
+    }
+    .copyright__text {
+        width: 375px;
+        height: 71.5px;
+        justify-content: center;
+        align-items: end;
+    }
+    .copyright__title {
+        margin-left: 0px;
+        margin-bottom: 9px;
+    }
+    .copyright__links {
+        width: 375px;
+        height: 71.5px;
+        justify-content: center;
+        align-items: end;
+    }
+    .social__icon {
+        margin-right: 0px;
     }
 }
