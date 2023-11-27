@@ -230,6 +230,10 @@
     z-index: 1;
 }
 
+.img__button a img {
+    margin-right: 4.03px;
+}
+
 .product__img:hover .img__button {
     opacity: 1;
 }
