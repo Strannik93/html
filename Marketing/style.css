@@ -3,18 +3,22 @@
     padding: 0;
 }
 
+.body {
+    width: 100vw;
+}
+
 .header {
     padding-top: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     background: #222222;
-    width: 1600px;
+    width: 100%;
     height: 75px;
 }
 
 .header__logo {
     width: 111px;
     height: 38px;
-    margin-left: 231px;
+    margin-left: 14.4%;
     margin-top: 18px;
 }
 
@@ -29,7 +33,7 @@
 }
 
 .dropmenu {
-    background-color: #FFFFFF;
+    background-color: #222222;
     border: none;
 }
 
@@ -37,7 +41,7 @@
     display: none;
     position: absolute;
     background-color: #FFFFFF;
-    min-width: 232px;
+    max-width: 232px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -101,59 +105,53 @@
 .header__link {
     display: flex;
     float: right;
-    margin-right: 240px;
+    margin-right: 15%;
     margin-top: 26px;
 }
 
 .top__header {
     background: #F1E4E6;
-    width: 1600px;
-    height: 764px;
+    width: 100%;
 }
 
 .top__logo {
-    width: 801px;
-    height: 764px;
+    width: 50%;
 }
 
 .top__brend {
     vertical-align: top;
-    margin-top: 289px;
-    margin-right: 331px;
-    width: 405px;
-    height: 93px;
+    margin-top: 18.11%;
+    margin-right: 20.7%;
+    width: 25.3%;
 }
 
 .top__middle {
-    width: 1140px;
-    height: 470px;
-    margin-left: 230px;
-    margin-right: 230px;
+    width: 71.25%;
+    margin-left: 14.4%;
+    margin-right: 14.4%;
     margin-top: 65px;
     margin-bottom: 96px;
 }
 
 .img__sale {
-    width: 360px;
-    height: 260px;
+    width: 31.6%;
 }
 
 .img__accesories {
-    width: 1140px;
-    height: 180px;
+    width: 100%;
 }
 
 .middle__sale {
+    width: 100%;
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
 }
 
 .products {
-    width: 1140px;
-    height: 1395px;
-    margin-left: 230px;
-    margin-right: 230px;
+    width: 71.25%;
+    margin-left: 14.4%;
+    margin-right: 14.4%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -173,6 +171,7 @@
 }
 
 .product__offers {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -181,9 +180,12 @@
 }
 
 .product__img {
-    width: 360px;
-    height: 420px;
+    width: 100%;
     position: relative;
+}
+
+.product__img img {
+    width: 100%;
 }
 
 .overlay {
@@ -231,6 +233,7 @@
 }
 
 .img__button a img {
+    width: 18.7%;
     margin-right: 4.03px;
 }
 
@@ -239,11 +242,11 @@
 }
 
 .product {
-    width: 360px;
-    height: 587px;
+    width: 31.6%;
 }
 
 .product__title {
+    width: 90%;
     font-family: Lato;
     font-size: 13px;
     color: #000000;
@@ -251,12 +254,13 @@
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 16px;
+    margin-left: 4.5%;
     margin-top: 25px;
     margin-bottom: 16px;
 }
 
 .product__subtitle {
+    width: 90%;
     font-family: Lato;
     color: #5D5D5D;
     font-size: 14px;
@@ -264,12 +268,12 @@
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
-    width: 302px;
-    margin-left: 16px;
+    margin-left: 4.5%;
     margin-bottom: 16px;
 }
 
 .product__price {
+    width: 90%;
     font-family: Lato;
     color: #F16D7F;
     font-size: 16px;
@@ -277,7 +281,7 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 16px;
+    margin-left: 4.5%;
     margin-bottom: 30px;
 }
 
@@ -294,12 +298,11 @@
 }
 
 .bottom {
-    width: 1600px;
-    height: 868px;
+    width: 100%;
 }
 
 .bottom__info {
-    width: 1600px;
+    width: 100%;
     height: 341px;
     background: #222224;
     display: flex;
@@ -309,7 +312,7 @@
 }
 
 .info {
-    width: 360px;
+    width: 22.5%;
     height: 134px;
     margin-right: 30px;
     display: flex;
@@ -319,10 +322,11 @@
 }
 
 .info img {
-    height: 25%;
+    width: 44.99px;
 }
 
 .info__title {
+    width: 90%;
     font-family: Lato;
     font-size: 20px;
     font-weight: 400;
@@ -335,6 +339,7 @@
 }
 
 .info__subtitle {
+    width: 90%;
     font-family: Lato;
     font-size: 14px;
     font-weight: 300;
@@ -342,20 +347,18 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FBFBFB;
-    width: 300px;
-    height: 134px;
 }
 
 .subscribe {
-    width: 1600px;
-    height: 448px;
+    width: 100%;
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 .subscribe__photo {
-    width: 1600px;
-    height: 448px;
+    width: 100%;
+    height: 100%;
     background-image: url(img/Layer41.jpg);
     opacity: 0.4;
     filter: alpha(opacity=40);
@@ -363,20 +366,23 @@
 }
 
 .subscribe__info {
-    width: 800px;
-    height: 448px;
+    width: 50%;
+    min-height: 448px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .subscribe__info img {
     width: 96px;
     height: 96px;
-    margin-top: 97px;
     margin-bottom: 30px;
-    margin-left: 352px;
 }
 
 .subscribe__infotext {
+    width: 45%;
     font-family: Lato;
     font-size: 20px;
     font-weight: 400;
@@ -385,20 +391,20 @@
     text-align: center;
     font-style: italic;
     color: #222224;
-    margin-left: 230.29px;
-    margin-right: 210.26px;
 }
 
 .subscribe__mail {
-    width: 800px;
-    height: 448px;
+    width: 50%;
+    height: 31.7%;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .subscribe__mailtitle {
+    width: 44.5%;
     font-family: Lato;
     font-size: 24px;
     font-weight: 700;
@@ -406,10 +412,10 @@
     letter-spacing: 0em;
     text-align: center;
     color: #222224;
-    margin-top: 150px;
 }
 
 .subscribe__mailtext {
+    width: 44.5%;
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
@@ -421,7 +427,7 @@
 
 .subscribe__button {
     position: relative;
-    width: 356px;
+    width: 44.5%;
     height: 49px;
     margin-top: 32px;
 }
@@ -443,7 +449,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px;
+    width: 30%;
     height: 100%;
     color: #FBFBFB;
     background: #F16D7F;
@@ -452,15 +458,15 @@
 }
 
 .copyright {
-    width: 1600px;
+    width: 100%;
     height: 79px;
     background: #222224;
     display: flex;
 }
 
 .copyright__text {
-    width: 800px;
-    height: 79px;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -474,12 +480,12 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FBFBFB;
-    margin-left: 235px;
+    margin-left: 29.4%;
 }
 
 .copyright__links {
-    width: 800px;
-    height: 79px;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -488,7 +494,7 @@
 .social__icon {
     width: 147.66px;
     height: 32px;
-    margin-right: 230.34px;
+    margin-right: 28.8%;
     display: flex;
     justify-content: space-between;
 }
@@ -501,11 +507,10 @@
 @media (max-width: 768px) {
     /*Для планшета*/
     .header {
-        width: 768px;
         height: 74px;
     }
     .header__logo {
-        margin-left: 32px;
+        margin-left: 4.2%;
     }
     .link {
         margin-right: 15px;
@@ -514,138 +519,114 @@
         margin-right: 15px;
     }
     .header__link {
-        margin-right: 32px;
+        margin-right: 4.2%;
         margin-top: 19px;
     }
-    .top__header {
-        width: 769.57px;
-        height: 367.57px;
+    .dropmenu__content {
+        max-width: 160px;
     }
-    .top__logo {
-        width: 386px;
-        height: 368px;
+    .dropmenu__content a {
+        width: 160px;
     }
     .top__brend {
-        margin-right: 33.57px;
-        margin-top: 138px;
-        width: 311px;
-        height: 92px;
+        margin-right: 4.36%;
+        margin-top: 17.97%;
+        width: 40.5%;
     }
     .top__middle {
-        width: 736px;
-        height: 303.04px;
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 95.83%;
+        margin-left: 2.08%;
+        margin-right: 2.08%;
         margin-top: 64.95px;
         margin-bottom: 109.92px;
     }
-    .img__sale {
-        width: 232.33px;
-        height: 167.62px;
-    }
-    .img__accesories {
-        width: 734.58px;
-        height: 116.09px;
-    }
     .products {
-        width: 768px;
-        height: 1950px;
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 95.83%;
+        margin-left: 2.08%;
+        margin-right: 2.08%;
     }
     .title {
+        width: 90%;
         margin-bottom: 3.3px;
     }
     .subtitle {
+        width: 90%;
         margin-bottom: 72.74px;
     }
     .product__offers {
         margin-bottom: 32.48px;
     }
     .product {
-        height: 581px;
+        width: 46.875%;
     }
     .product__title {
-        margin-left: 16.46px;
+        margin-left: 5.14%;
         margin-top: 25.35px;
         margin-bottom: 12.656px;
     }
     .product__subtitle {
-        margin-left: 16.46px;
+        margin-left: 5.14%;
         margin-bottom: 18px;
     }
     .product__price {
-        margin-left: 16.46px;
+        margin-left: 5.14%;
         margin-bottom: 20px;
     }
-    .bottom {
-        width: 768px;
-        height: 1382px;
-    }
     .bottom__info {
-        width: 768px;
         height: 610px;
         flex-direction: column;
         justify-content: space-around;
     }
+    .info {
+        width: 46.875%;
+    }
     .subscribe {
-        width: 768px;
-        height: 693px;
         flex-direction: column;
     }
     .subscribe__photo {
-        width: 768px;
-        height: 772px;
         background-image: url(img/Layer41pl.jpg);
     }
     .subscribe__info {
-        width: 768px;
-        height: 346.5px;
+        width: 100%;
+        min-height: 346.5px;
     }
     .subscribe__info img {
         margin-top: 64px;
-        margin-left: 325.71px;
-    }
-    .subscribe__infotext {
-        margin-left: 204px;
-        margin-right: 204.55px;
     }
     .subscribe__mail {
-        width: 768px;
-        height: 346.5px;
+        width: 100%;
+        height: 17.84%;
+        margin-top: 48px;
+        margin-bottom: 140px
     }
     .subscribe__mailtitle {
         margin-top: 0px;
+        width: 50%;
+    }
+    .subscribe__mailtext {
+        width: 50%;
     }
     .subscribe__button {
         margin-top: 27px;
     }
     .copyright {
-        width: 768px;
         position: relative;
     }
-    .copyright__text {
-        width: 484px;
-    }
     .copyright__title {
-        margin-left: 32px;
-    }
-    .copyright__links {
-        width: 484px;
+        margin-left: 8.34%;
     }
     .social__icon {
-        margin-right: 32.34px;
+        margin-right: 8.42%;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     /*Для телефона*/
     .header {
-        width: 375px;
         height: 74px;
     }
     .header__logo {
-        margin-left: 16px;
+        margin-left: 4.27%;
     }
     .link {
         margin-right: 0px;
@@ -656,49 +637,47 @@
         height: 23px;
     }
     .header__link {
-        margin-right: 26px;
+        margin-right: 6.93%;
         margin-top: 25px;
     }
+    .dropmenu__content {
+        right: 0;
+    }
     .top__header {
-        width: 375px;
-        height: 363px;
+        display: flex;
+        justify-content: center;
     }
     .top__logo {
         display: none;
     }
     .top__brend {
-        margin-top: 148px;
-        margin-right: 56px;
-        margin-left: 56px;
-        width: 263px;
-        height: 66px;
+        margin-top: 39.46%;
+        margin-bottom: 39.46%;
+        margin-right: 0;
+        width: 70.13%;
     }
     .top__middle {
-        width: 343px;
-        height: 950px;
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 91.47%;
+        margin-left: 4.27%;
+        margin-right: 4.27%;
         margin-top: 64px;
         margin-bottom: 64px;
     }
     .img__sale {
-        width: 343px;
-        height: 247px;
+        width: 100%;
         margin-bottom: 32px;
     }
     .img__accesories {
-        width: 343.26px;
-        height: 111px;
+        width: 100%;
     }
     .middle__sale {
         flex-wrap: wrap;
         margin-bottom: 0px;
     }
     .products {
-        width: 359px;
-        height: 100%;
-        margin-left: 8px;
-        margin-right: 8px;
+        width: 95.73%;
+        margin-left: 2.13%;
+        margin-right: 2.13%;
     }
     .title {
         margin-bottom: 3.3px;
@@ -709,81 +688,68 @@
     .product__offers {
         margin-bottom: 40.61px;
     }
-    .product img {
-        width: 359px;
-        height: 418.83px;
-    }
     .product {
-        width: 359px;
-        height: 579.39px;
+        width: 100%;
         margin-bottom: 15.62px;
     }
     .product__title {
-        margin-left: 17.95px;
+        margin-left: 5%;
         margin-top: 25.28px;
-        margin-bottom: 12.62px;
+        margin-bottom: 3.52%;
     }
     .product__subtitle {
-        margin-left: 16.41px;
-        margin-bottom: 17.95px;
+        margin-left: 4.57%;
+        margin-bottom: 5%;
     }
     .product__price {
-        margin-left: 18.36px;
-        margin-bottom: 19.95px;
-    }
-    .bottom {
-        width: 375px;
-        height: 1303px;
-    }
-    .bottom__info {
-        width: 375px;
-        height: 610px;
+        margin-left: 5.11%;
+        margin-bottom: 5.56%;
     }
     .info {
-        width: 347.82px;
-        height: 129.47px;
+        width: 92.752%;
+        height: 34.53%;
         margin-right: 0px;
     }
     .info__title {
-        margin-bottom: 14.66px;
-        margin-top: 24.22px;
+        margin-bottom: 4.21%;
+        margin-top: 6.96%;
     }
     .subscribe {
-        width: 375px;
-        height: 550px;
+        overflow: hidden;
     }
     .subscribe__photo {
-        width: 609.52px;
-        height: 550px;
+        width: 162.595%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        object-fit: cover;
+        background-size: cover;
     }
     .subscribe__info {
-        width: 375px;
-        height: 275px;
+        min-height: 275px;
     }
     .subscribe__info img {
         width: 91.73px;
         height: 91.73px;
         margin-top: 64px;
-        margin-bottom: 29.27px;
-        margin-left: 132.3px;
     }
     .subscribe__infotext {
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 90%;
+        margin-left: 4.26667%;
+        margin-right: 4.26667%;
     }
     .subscribe__mail {
-        width: 375px;
-        height: 275px;
+        height: 225px;
     }
     .subscribe__mailtitle {
+        width: 100%;
         margin-top: 42px;
     }
+    .subscribe__mailtext {
+        font-size: 14px;
+        width: 100%;
+    }
     .subscribe__button {
-        width: 341px;
+        width: 90%;
         height: 46.94px;
         margin-top: 22.15px;
     }
@@ -794,12 +760,11 @@
         font-size: 14px;
     }
     .copyright {
-        width: 375px;
-        height: 143px;
         flex-direction: column-reverse;
+        height: 143px;
     }
     .copyright__text {
-        width: 375px;
+        width: 100%;
         height: 71.5px;
         justify-content: center;
         align-items: end;
@@ -809,7 +774,7 @@
         margin-bottom: 9px;
     }
     .copyright__links {
-        width: 375px;
+        width: 100%;
         height: 71.5px;
         justify-content: center;
         align-items: end;
